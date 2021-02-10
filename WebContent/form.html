@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<title>Document</title>
+
+<link href="formcss.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style>
+
+
+form{
+width:60%;
+margin : 5% 20% 5% 20%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&family=Lato:ital,wght@0,400;1,900&display=swap');
+body{
+/* 	 background-color: #f9fafb; */
+font-family:  'Lato', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.submit-button{
+cursor: pointer;
+background-color:#378f3f;
+border: 2px solid #378f3f;
+border-radius: 4px;
+color: #fff;
+display: block;
+font-size: 16px;
+padding: 10px;
+margin-top: 20px;
+width: 100%;
+}
+
+label{
+    color:#3CAC45;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #378F3F;
+}
+input{
+opacity:0.7;
+}
+
+</style>
+</head>
+<body>
+
+
+<form class="row g-3" action="index.jsp" method="post">
+<!-- Basic Landing Page -->
+<!-- First Name -->  
+<h2 class="h2 text-center mb-4 title text-uppercase " id="headtext"><strong>Please enter your details to create your resume.</strong></h2>
+
+<hr>
+
+<!-------------------------------------------------------------- About  ------------------------------------------------------------------------------------->
+<h4 class="h4 text-center mb-4 title text-uppercase "  id="headtext"><strong>Begin by telling us a bit about yourself.</strong></h4>
+<!-- First Name -->
+<div class="mb-3">
+<label for="Last Name" class="form-label">First name *</label>
+<input type="text" class="form-control"  id= "firstname" name="firstname" placeholder="Nishanth"  required>
+<div id="emailHelp" class="form-text">Note - As shown in the above field, if it is followed by a (*), it means that the field is mandatory.</div>
+</div>
+
+<!--  Last Name -->
+<div class="mb-3">
+<label for="First Name" class="form-label">Last name *</label>
+<input type="text" class="form-control" id="lastname" name="lastname" Placeholder="Vaidya"  required >
+</div>
+
+<!-- Age -->
+<div class="mb-3">
+<label for="Age" class="form-label">Age *</label>
+<input type="number" class="form-control" id="age" name="age" Placeholder="22"  required >
+</div>
+
+<!-- Designation -->
+<div class="mb-3">
+<label for="Designation" class="form-label">Designation *</label>
+<input type="text" class="form-control" id="designation" name="designation" Placeholder="You can write multiple designations deperated by comma's." required >
+</div>
+
+<!-- Email -->
+
+<div class="mb-3">
+<label for="Email" class="form-label">E-Mail *</label>
+<input type="email" class="form-control" id="email" name="email" Placeholder="adc@xyz.com"  required>
+<div id="emailHelp" class="form-text">We urge you to refrain from using non work related emails.</div>
+</div>
+
+<!-- Phone -->
+<div class="mb-3">
+<label for="Phone" class="form-label">Enter your mobile number *</label>
+<input type="number" class="form-control" id="phone" name="phone" Placeholder="Example - 9999999999"  required>
+</div>
+
+
+<!-- Profile pic -->
+<div class="mb-3">
+<label for="ProfPic" class="form-label">Please Enter the URL of your Profile Picture.</label>
+<input type="text" class="form-control" id="profilepic" name=profilepic>
+ <div id="emailHelp" class="form-text">In case you are unable to, a default profile photo will be used..</div>
+</div>
+
+<!-- Profile Video -->
+<div class="mb-3">
+<label for="ProfVid" class="form-label">You can also give the url to a short video about yourself.</label>
+<input type="text" class="form-control" id="profilevideo" name=profilevideo>
+ <div id="emailHelp" class="form-text">In case you are unable to, a default no video will be played.</div>
+</div>
+
+<!-- Short Bio -->
+<div class="mb-3">
+<label for="short bio" class="form-label">Tell us about yourself in a few sentences. *</label>
+<textarea class="form-control" id="shortbio" name="shortbio" rows="4"  required></textarea>
+</div>
+
+<!--  Known Languages -->
+<div class="mb-3">
+<label for="Languages" class="form-label">You can enter the languages you know here separated by comma's. *</label>
+<input type="text" class="form-control" id="languages" name="languages" Placeholder="Kannada"   required>
+</div>
+
+<!--Address Country State and City--> 
+<div class="mb-3">
+<label for="address" class="form-label">Enter your address below. *</label>
+<input type="text" class="form-control" id="address" name="address" Placeholder="#1, 2nd Street, 3."   required>
+</div>
+
+<div class="row">
+<div class="col-sm">
+<label for="City" class="cityname">City *</label>
+<input type="text" class="form-control" id="cityname" name="cityname" Placeholder="Example - Bangalore"  required >
+</div> &nbsp;
+<div class="col-sm">
+<label for="State" class="statename" >State *</label>
+<input type="text" class="form-control" id="statename" name="statename" Placeholder="Example - Karnataka"  required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="Country" class="countryname" >Country *</label>
+<input type="text" class="form-control" id="countryname" name="countryname" Placeholder="Example - India"  required >
+</div>
+</div>
+<!-- Pin Code -->
+<div class="mb-3">
+<label for="PINCODE" class="form-label">Enter your Pin Code *</label>
+<input type="number" class="form-control" id="pincode" name="pincode" Placeholder="Example - 560000"  required>
+</div>
+
+<br>
+<br>
+
+<hr style="margin-top:3%">
+
+<!----------------------------------------------------------------------------------- URL's  -------------------------------------------------------------------------->
+
+<h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin-top:5%"><strong>You can add Social Media Links here</strong></h4>
+<!-- Linkedin -->
+<div class="mb-3" style="margin-top:3%">
+<label for="LinkedIN" class="form-label">Your LinkedIn URL(If you don't have one, a link to LinkedIN is given by default.)</label>
+<input type="text" class="form-control" id="linkedinurl" name="linkedinurl" placeholder="https://in.linkedin.com/">
+<div id="emailHelp" class="form-text">In case you don't want any links, replace the above text with the # symbol.</div>
+
+</div>
+
+<!-- Github -->
+
+<div class="mb-3">
+<label for="Github" class="form-label">Your GitHub URL(If you don't have one, a link to Github is given by default.)</label>
+<input type="text" class="form-control" id="giturl" name="giturl" placeholder="https://github.com/">
+<div id="emailHelp" class="form-text">In case you don't want any links, replace text with the # symbol.</div>
+</div>
+
+<!-- Facebook -->
+
+<div class="mb-3">
+<label for="Facebook" class="form-label">Your Facebook URL(If you don't have one, a link to Facebook is given by default.)</label>
+<input type="text" class="form-control" id="facebookurl" name="facebookurl"  placeholder="https://www.facebook.com/">
+    <div id="emailHelp" class="form-text">In case you don't want any links, replace the above text with the # symbol.</div>
+
+</div>
+
+<!------------------------------------------------------------------------------Education Details  --------------------------------------------------------------------->
+<hr>
+<h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin:3% 0 3% 0"><strong>Lets have a look at your Educational Details</strong></h4>
+<div class="mb-3">
+<label for="education" class="form-label">Enter your degree Degree Field and Specialization. *</label>
+<input type="text" class="form-control" id="degreebranch" name="degreebranch" Placeholder="B.E/CSE"  required >
+</div>
+
+<!-- Name of the University -->
+<div class="mb-3">
+<label for="education" class="form-label">Enter the name of your uniiversity/institute *</label>
+<input type="text" class="form-control" id="universityname" name="universityname" Placeholder="Visvesvaraya Techological uniiversity"  required >
+</div>
+
+<!-- Years Pursued -->
+<div class="mb-3">
+<label for="education" class="form-label">Enter the years between which you pursued your degree. *</label>
+<input type="text" class="form-control" id="degreeyear" name="degreeyear" Placeholder="Example - 2016-2020"  required >
+</div>
+
+<!-- Coursework -->
+<div class="mb-3">
+<label for="education" class="form-label">Enter a few courses that you considered to be important during your course. *</label>
+<input type="text" class="form-control" id="coursework" name="coursework" Placeholder="HTML, Java, Python, etc." required  >
+</div>
+
+<!--College Link -->
+<div class="mb-3">
+<label for="education" class="form-label">Enter the link to your institute's website. *</label>
+<input type="text" class="form-control" id="collink" name="collink" Placeholder="https://sambhramit.com/" required  >
+</div>  
+
+
+
+<h6 class="h6 text-center mb-4 title text-uppercase " id="headtext" style="margin:2% 0 4% 0"><strong>Enter the Percentage/SGPA of each of your semesters. *</strong></h6>
+<div class="row">
+<div class="col-sm">
+<label for="firstsemester" class="firstsemester">First</label>
+<input type="text" class="form-control" id="firstsemester" name="firstsemester"   required>
+</div> &nbsp;
+<div class="col-sm">
+<label for="secondsemester" class="secondsemester" >Second</label>
+<input type="text" class="form-control" id="secondsemester" name="secondsemester"  required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="thirdsemester" class="thirdsemester" >Third</label>
+<input type="text" class="form-control" id="thirdsemester" name="thirdsemester"    required>
+</div>&nbsp;
+<div class="col-sm">
+<label for="fourthsemester" class="fourthsemester" >Fourth</label>
+<input type="text" class="form-control" id="fourthsemester" name="fourthsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="fifthsemester" class="fifthsemester" >Fifth</label>
+<input type="text" class="form-control" id="fifthsemester" name="fifthsemester"  required  >
+</div>&nbsp;
+<div class="col-sm">
+<label for="sixthsemester" class="sixthsemester" >Sixth</label>
+<input type="text" class="form-control" id="sixthsemester" name="sixthsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="seventhsemester" class="seventhsemester" step="0.01">Seventh</label>
+<input type="text" class="form-control" id="seventhsemester" name="seventhsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="eighthsemester" class="eighthsemester" >Eighth</label>
+<input type="text" class="form-control" id="eighthsemester" name="eighthsemester"   required >
+</div>
+</div>
+
+<h6 class="h6 text-center mb-4 title text-uppercase " id="headtext" style="margin:2% 0 4% 0"><strong>Enter the Cumulative Percentage/CGPA of each of your semesters. *</strong></h6>
+<div class="row">
+<div class="col-sm">
+<label for="cfirstsemester" class="firstsemester">First</label>
+<input type="text" class="form-control" id="firstsemester" name="cfirstsemester" disabled  >
+</div> &nbsp;
+<div class="col-sm">
+<label for="csecondsemester" class="secondsemester" >Second</label>
+<input type="text" class="form-control" id="secondsemester" name="csecondsemester"  required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="cthirdsemester" class="thirdsemester" >Third</label>
+<input type="text" class="form-control" id="thirdsemester" name="cthirdsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="cfourthsemester" class="fourthsemester" >Fourth</label>
+<input type="text" class="form-control" id="fourthsemester" name="cfourthsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="cfifthsemester" class="fifthsemester" >Fifth</label>
+<input type="text" class="form-control" id="fifthsemester" name="cfifthsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="csixthsemester" class="sixthsemester" >Sixth</label>
+<input type="text" class="form-control" id="sixthsemester" name="csixthsemester"    required>
+</div>&nbsp;
+<div class="col-sm">
+<label for="cseventhsemester" class="seventhsemester">Seventh</label>
+<input type="text" class="form-control" id="seventhsemester" name="cseventhsemester"   required >
+</div>&nbsp;
+<div class="col-sm">
+<label for="ceighthsemester" class="eighthsemester" >Eighth</label>
+<input type="text" class="form-control" id="eighthsemester" name="ceighthsemester"    required>
+</div>
+
+<!--Transcripts -->
+<div class="mb-3"style="margin-top:3%">
+<label for="education" class="form-label">Enter the link to your transcripts/consolidated marks sheet.</label>
+<input type="text" class="form-control" id="transcriptimage" name="transcriptimage" Placeholder="" required>
+</div> 
+</div>
+<hr style="margin-top:3%">
+<!---------------------------------------------------------------------------------------Telchnical Skills  --------------------------------------------------------------->
+
+<!-- Programming Languages -->
+<h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin:5% 0 3% 0"><strong>Now it's time to assess Technical Skills</strong></h4>
+<div class="mb-3">
+<label for="techskills" class="form-label">Enter the program(s) that you can code in.*</label>
+<input type="text" class="form-control" id="coursework" name="programlang" Placeholder="C++, Java, JavaScript, SQL, NoSQL."  required >
+</div>
+
+<!-- Technologies -->
+
+<div class="mb-3">
+<label for="techskills" class="form-label">Enter a few courses that you considered to be important during your course. *</label>
+<input type="text" class="form-control" id="coursework" name="tech" Placeholder="HTML, CSS, MongoDB, NodeJS"  required >
+</div>
+
+<!-- Software Tools -->
+<div class="mb-3">
+<label for="techskills" class="form-label">Enter a few courses that you considered to be important during your course. *</label>
+<input type="text" class="form-control" id="coursework" name="softtools" Placeholder="Eclipse, Visual studio, Jupyter notebook, Anaconda, Pycharm, Git."   	required>
+</div>
+
+<!-- Methodologies -->
+
+<div class="mb-3">
+<label for="techskills" class="form-label">Enter a few courses that you considered to be important during your course. *</label>
+<input type="text" class="form-control" id="coursework" name="methodologies" Placeholder="Scrum, Object Oriented Programming (OOP)."   required>
+</div>
+
+
+<!----------------------------------------------------------------------------Trainings  -------------------------------------------------------------------------------->
+<hr>
+<h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin:3% 0 3% 0"><strong>Enter you past and/or current training(s) Details</strong></h4>
+
+<div class="mb-3">
+          <label for="techskills" class="form-label">Enter up to six training(s) or past work experiences that you may have had.The details to be added are left up to the user as there are varying types of training. *</label>
+          <div id="emailHelp" class="form-text">(The maximum value was limited to six as to not lengthen the resume too much.)</div><br>
+          <div >
+            <textarea id="tobecopied"  class="form-control" name="training0" Placeholder="Scrum, Object Oriented Programming (OOP)." required  style="margin:2% 0 2% 0;" ></textarea>
+          </div>
+</div>
+<div class="mb-3">
+          <div >
+          <textarea id="tobecopied"  class="form-control" name="training1" Placeholder="Scrum, Object Oriented Programming (OOP)." required  style="margin:2% 0 2% 0;" ></textarea>
+          </div>
+          </div>
+
+<div id="container" >
+</div>
+<button class="btn btn-success submit-button" type="button"  id="add" onclick="addFields()">Add another training.</button>
+ <div id="counter"></div>
+ <hr>
+ 
+ 
+ 
+ <!----------------------------------------------------------------------------Projects---------------------------------------------------------------------------------->
+ 
+ <h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin:3% 0 3% 0"><strong>Write about the project(s) that you have worked on.</strong></h4>
+ 
+
+ <div class="aaaaa">
+ <div class="mb-3 ">
+<label for="project" id="projectlabal1" class="form-label">Enter the name and details of your project using the two fields below for reference."</label>
+<input type="text" id="projname0"   class="form-control" disabled id="projname0" name="projname0" Placeholder="Heart Disease Prediction Using Machine Learning." style="margin-bottom:5%">
+</div>
+<div class="mb-3">
+<textarea class="form-control" id="projdeets0" disabled   name="projdeets0" rows="10" style="margin-bottom:5%">
+Programming languages implemented - Python
+Softwares Used - Anaconda
+Description - Heart Disease Prediction as the name suggests, is an application that is used to predict the chances of a 
+person getting a cardiac disease based on a number of factors. The factors included whether a person is a smoker, 
+whether he has other underlying conditions, etc. On an average the application got an accuracy of 87%.
+
+</textarea>
+ 
+</div>
+<p style="color:green" id="p1label">Enter the details of the project(s) below</p>
+ <div id="container1" >
+
+</div>
+</div>
+<button class="btn btn-success submit-button " type="button" id="add" onclick="addProjectFields()">Add a Project</button>
+
+
+ </div>
+ <br><br><br><hr>
+ 
+ 
+ 
+ 
+ 
+<!---------------------------------------------------------------------------Experience(s)------------------------------------------------------------------------------->
+ <h4 class="h4 text-center mb-4 title text-uppercase " id="headtext" style="margin:3% 0 3% 0"><strong>Finally, write about your previous and/or current experience(s).</strong></h4>
+ <div id="" class="form-text">Note - We request you to enter at least one work/ experience, while entering the other two can be done at your discretion.</div>
+ 
+ 
+ <h6 class="h6 text-center mb-4 title text-uppercase " id="headtext" style="margin:2% 0 4% 0"><strong>Enter the details of the first experience / work that you'd like to show on your resume. *</strong></h6>
+ 
+ <!-- Duration -->
+
+<div class="mb-3">
+<label for="experience" class="form-label">Enter the duration of the work done in (MMM-YYYY to MMM-YYYY) format. *</label>
+<input type="text" class="form-control" id="experiencedate1" name="experiencedate1" Placeholder="Dec 2021 - Present" required  >
+</div>
+
+<!-- Company -->
+ 
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter the name of the company, business, etc, that you worked for during this time.*</label>
+<input type="text" class="form-control" id="experiencecompany1" name="experiencecompany1" Placeholder="Tech Mahindra"   required>
+</div>
+
+<!-- Role -->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter your role during your time there. *</label>
+<input type="text" class="form-control" id="experiencerole1" name="experiencerole1" Placeholder="Trainee"  required >
+</div>
+
+<!-- Description -->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Describe the contribution's you made during your time there. *</label>
+<textarea class="form-control" id="experiencedeets1"  name="experiencedeets1" required rows="10" style="margin-bottom:5%"></textarea>
+</div>
+
+
+
+ <h6 class="h6 text-center mb-4 title text-uppercase " id="headtext" style="margin:2% 0 4% 0"><strong>Enter the details of the second experience / work that you'd like to show on your resume.</strong></h6>
+
+
+ <!-- Duration 2-->
+
+<div class="mb-3">
+<label for="experience" class="form-label">Enter the duration of the work done in (MMM-YYYY to MMM-YYYY) format.</label>
+<input type="text" class="form-control" id="experiencedate1" name="experiencedate2" Placeholder="Dec 2021 - Present"  >
+</div>
+
+<!-- Company 2-->
+ 
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter the name of the company, business, etc, that you worked for during this time.</label>
+<input type="text" class="form-control" id="experiencecompany1" name="experiencecompany2" Placeholder="Tech Mahindra"  >
+</div>
+
+<!-- Role 2-->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter your role during your time there. </label>
+<input type="text" class="form-control" id="experiencerole1" name="experiencerole2" Placeholder="Trainee"  >
+</div>
+
+<!-- Description 2-->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter the duration of the work done in (MMM-YYYY to MMM-YYYY) format.</label>
+<textarea class="form-control" id="experiencedeets1"  name="experiencedeets2" rows="10" style="margin-bottom:5%"></textarea>
+</div>
+
+
+ <h6 class="h6 text-center mb-4 title text-uppercase " id="headtext" style="margin:2% 0 4% 0"><strong>Enter the details of the third experience / work that you'd like to show on your resume.</strong></h6>
+
+
+ <!-- Duration 3-->
+
+<div class="mb-3">
+<label for="experience" class="form-label">Enter the duration of the work done in (MMM-YYYY to MMM-YYYY) format.</label>
+<input type="text" class="form-control" id="experiencedate1" name="experiencedate3" Placeholder="Dec 2021 - Present"  >
+</div>
+
+<!-- Company 3-->
+ 
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter the name of the company, business, etc, that you worked for during this time.</label>
+<input type="text" class="form-control" id="experiencecompany1" name="experiencecompany3" Placeholder="Tech Mahindra"  >
+</div>
+
+<!-- Role 3-->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter your role during your time there.</label>
+<input type="text" class="form-control" id="experiencerole1" name="experiencerole3" Placeholder="Trainee"  >
+</div>
+
+<!-- Description 3-->
+
+ <div class="mb-3">
+<label for="experience" class="form-label">Enter the duration of the work done in (MMM-YYYY to MMM-YYYY) format.</label>
+<textarea class="form-control" id="experiencedeets1"  name="experiencedeets3" rows="10" style="margin-bottom:5%"></textarea>
+</div>
+
+
+<hr>
+<!---------------------------------------------------------------------------- Accept Conditions and Submit  ------------------------------------------------------------>
+<div class="mb-3">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required >
+<label class="form-check-label" for="invalidCheck2" >
+Check the box if you're satisfied with the details you have entered adn would like to proceed. *
+</label>
+</div>
+</div>
+<div class="mb-3">
+<button class="btn btn-success submit-button" type="submit">Submit form</button>
+</div>
+</form>
+
+	
+<!-------------------------------------------------------------------------------Script  -----------------------------------------------------------------------------------	-->
+  <script src="formjs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
